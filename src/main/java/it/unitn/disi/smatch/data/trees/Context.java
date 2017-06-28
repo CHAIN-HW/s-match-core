@@ -1,11 +1,11 @@
 package it.unitn.disi.smatch.data.trees;
-
+import java.io.*;
 /**
  * A Context that contains tree data structure.
  *
  * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
  */
-public class Context extends BaseContext<INode> implements IContext, ITreeStructureChangedListener {
+public class Context extends BaseContext<INode> implements IContext, ITreeStructureChangedListener, Serializable {
 
     public Context() {
         super();
